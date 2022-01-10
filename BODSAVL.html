@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html> 
+
+	<!-- <div ID=TabTitle>
+	<head>
+		<br />
+		<br />
+			<title> AVL </title>
+		<br />
+	</head>
+	</div>
+	
+	<div id =HeaderSection>
+	<body>
+	
+		<h2><p style="text-align:center;"> Automatic Vehicle Location Data - Hardware/Software</p></h2>
+		<h3><!-- <p style="text-align:center;">This page is designed to aid bus operators within scope to decide which hardware or software is best for collecting their AVL data.</p> --></h3>
+	</body>
+	</div> 
+	
+	<!-- <div id=IntroductionSection>
+		<body>
+			<br />
+			<p>It will be helpful to farmiliarise yourself with what <a href=https://www.gov.uk/government/collections/bus-open-data-service>BODS</a> and <a href=https://www.gov.uk/government/publications/technical-guidance-publishing-location-data-using-the-bus-open-data-service-siri-vm/technical-guidance-siri-vm>AVL Data</a> is.
+			<br />
+		</body>
+	</div>
+	
+	<div id=bottom>
+	<body> 
+	
+
+	
+	Further support 
+	
+	<ul>
+	<h5>
+	<li>Email <a href=mailto:karyee.do@kpmg.co.uk>Karyee Do</a></li> 
+	<li> Phone +44 7925 349553 </li>
+	<li><a href=https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmRhOWYyZGYtMTU1OS00ZWRhLTlhNTAtNDdhNTQxN2MzZDA2%40thread.v2/0?context=%7b%22Tid%22%3a%22deff24bb-2089-4400-8c8e-f71e680378b2%22%2c%22Oid%22%3a%221e5ec192-d61e-46ab-a497-db655c48f29d%22%7d>Join the Drop in sessions on Thursday 1:30 - 2:00pm</a></li>
+	<li> If you require any further support please contact me </li>
+	
+	</ul>
+	</h5>
+	</body>
+	</div> 
+	-->
+	
+	
+	
+	
+
+	<head>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+  
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+        }
+          
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+          
+        h1 {
+            color: darkblue;
+        }
+    </style>
+</head>
+  
+<body>
+    
+	<head>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+  
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 95%;
+        }
+          
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+          
+        h1 {
+            color: navy;
+        }
+    </style>
+</head>
+  
+<body>
+    <center>
+        <h1>BODS Automatic Vehicle Location</h1>
+        <h3>
+          Perform a search to discover the best hardware or software for your bus services
+        </h3>
+        <b>Search the table for price, suitability or company: 
+          <input id="gfg" type="text" 
+                 placeholder="Search here">
+        </b>
+        <br>
+        <br>
+        <table>
+		
+            <tr>
+                <th>Company</th>
+                <th>Type</th>
+                <th>Suitability</th>
+				<th>Cost</th>
+				<th>Pros</th>
+				<th>Cons</th>
+            </tr>
+			
+            <tbody id="tables">
+                <tr>
+                    <td><a href=https://www.goswift.ly/metronome>Go Swiftly - Metronome</a></td>
+                    <td>Software(App)</td>
+					<td>10 services</td>
+					<td>£400 p.a for 10 services (fixed)</td>
+					<td>
+						<ul>
+						<li>Suitable for app and existing tracking devices</li>
+						</ul>
+					</td>
+                    <td>
+						<ul>
+							<li>Requires an operation size of 10 services</li>
+						</ul>	
+                    </td>
+                </tr>
+				
+                <tr>
+                    <td><a href=https://shuttleid.uk/packages/>Shuttle ID - BOD Package</a></td>
+                    <td>Software (App)</td>
+					<td>Small Operators</td>
+					<td>£12.50p.m per service</td>
+					<td>
+						<ul>
+							<li>Also offer hardware</li>
+							<li>No ETM/training required</li>
+						</ul>
+					</td>
+                    <td>
+					<ul>
+						<li>Limited functionality</li>
+						<li>Requires specific tracking device</li>
+						<li>Dependent on signal strength</li>
+					</ul>
+					</td>
+                </tr>
+				
+                <tr>
+                    <td><a href=https://www.initse.com/ende/home/>Init</a></td>
+                    <td>Hardware and Software</td>
+                    <td>Medium to large (>40 services)</td>
+					<td>N/A</td>
+					<td>
+						<ul>
+							<li>Experienced transport technology</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>No existing AVL implementation</li>
+						</ul>
+					</td>
+                </tr>
+				
+				 <tr>
+                    <td><a href=https://www.ticketer.com/en/article/bus-open-data-service-bods-and-beyond/>Ticketer</a></td>
+                    <td>Hardware</td>
+                    <td>Large operators (>40 services)</td>
+					<td>£1,500.00 p.a per service</td>
+					<td>
+						<ul>
+							<li>Five options avaliable</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Might be overwhelmed with choice</li>
+						</ul>
+					</td>
+                </tr>
+				
+				 <tr>
+                    <td>Transmach <a href=https://www.transmach.co.uk/tm500.html>TM 500</a> and <a href=https://www.transmach.co.uk/tm920.html>TM 920</a></td>
+                    <td>Hardware</td>
+                    <td>Large operator (>40 services)</td>
+					<td>N/A</td>
+					<td>
+						<ul>
+							<li>Two options avaliable</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Requires hardware</li>
+						</ul>
+					</td>
+                </tr>
+
+				<tr>
+                    <td>Ticket Technology – <a href=http://www.ticket-technology.co.uk/products/tixiom-t1m>Tixiom Handheld</a> and <a href=http://www.ticket-technology.co.uk/products/ezifare>Ezifare Handheld</a></td>
+                    <td>Hardware</td>
+                    <td>TBC</td>
+					<td>£6.00 p.m per service</td>
+					<td>
+						<ul>
+							<li>Offer handheld devices</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Requires you to charge handheld devices</li>
+						</ul>
+					</td>
+                </tr>
+               
+				<tr>
+                    <td><a href=https://vixtechnology.com/>Vix Technology</a></td>
+                    <td>Hardware</td>
+                    <td>Large operators >100 srevices</td>
+					<td>N/A</td>
+					<td>
+						<ul>
+							<li>Experienced transport technology provider</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Most suitable for large operators</li>
+						</ul>
+					</td>
+                </tr>
+				
+				<tr>
+                    <td><a href=http://www.nextstopapp.co.uk/>Rise DM – Next Stop Driver</a></td>
+                    <td>Hardware and Software (App)</td>
+                    <td>Suitable for those who require both hardware (phone/tablet) and app which runs on Android.  </td>
+					<td>
+						<ul>
+							<li>Software (app) 00.50p p.m per service</li>
+							<li>Hardware (phone/tablet) £25.00 p.m </li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Cost effective</li>
+							<li>Quick setup</li>
+							<li>Independent of a ticket machine</li>
+							<li>Bulk discount available for larger operators</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Android only</li>
+							<li>Dependent on strength of signal and network</li>
+						</ul>
+					</td>
+                </tr>
+				
+				<tr>
+                    <td><a href=https://vectare.co.uk/>Vectare - VecTive</a></td>
+                    <td>Software (App/Web browser)</td>
+                    <td>Specifically designed for schools and system is set to help parents with booking (user friendly) </td>
+					<td>£75.00 p.m per service</td>
+					<td>
+						<ul>
+							<li>Specialised in school routes</li>
+							<li>Allows operators to work across multiple schools</li>
+							<li>User friendliness</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Android only</li>
+							<li>Dependent on strength of signal and network</li>
+						</ul>
+					</td>
+                </tr>
+				
+            </tbody>
+        </table>
+  
+        <script>
+            $(document).ready(function() {
+                $("#gfg").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                    $("#tables tr").filter(function() {
+                        $(this).toggle($(this).text()
+                        .toLowerCase().indexOf(value) > -1)
+                    });
+                });
+            });
+        </script>
+  </center>
+  
+</body>
+  
+  
+</body>
+	
+	
+	</body>
+	
+	
+	<body>
+		<center>
+		
+			
+
+	</body>
+	
+	<body>
+		<br />
+		<br />
+		<br />
+		<hr />
+		<br />
+		<p>
+			<b><u>Contact details and support:</b></u> 
+		</p>
+
+
+		<ul>
+		<h5>
+			Email <a href=mailto:karyee.do@kpmg.co.uk>Karyee Do</a> |
+			Phone +44 7925 349553 |
+			<a href=https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmRhOWYyZGYtMTU1OS00ZWRhLTlhNTAtNDdhNTQxN2MzZDA2%40thread.v2/0?context=%7b%22Tid%22%3a%22deff24bb-2089-4400-8c8e-f71e680378b2%22%2c%22Oid%22%3a%221e5ec192-d61e-46ab-a497-db655c48f29d%22%7d>Join the Drop in sessions on Thursday 1:30 - 2:00pm</a>
+			<p> Feel free to read further on <a href=https://www.gov.uk/government/collections/bus-open-data-service>BODS</a> and <a href=https://www.gov.uk/government/publications/technical-guidance-publishing-location-data-using-the-bus-open-data-service-siri-vm/technical-guidance-siri-vm>AVL Data</a>
+
+		</h5>
+		</ul>
+		</center>
+	</body>
+	
